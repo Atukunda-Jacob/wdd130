@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* 2. CSS VARIABLES IN :ROOT */
+/* 2. CSS VARIABLES IN :ROOT - ALL 10 USED */
 :root {
     --primary-color: #055a9c;
     --secondary-color: #f4a261;
@@ -19,10 +19,12 @@
     --nav-hover-background-color: #264653;
 }
 
-/* 3. USE THE VARIABLES */
+/* 3. BODY AND HEADINGS */
 body {
     font-family: var(--paragraph-font);
     color: var(--primary-color);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1, h2 {
@@ -30,15 +32,62 @@ h1, h2 {
     color: var(--primary-color);
 }
 
-header nav {
-    background-color: var(--nav-background-color);
+/* 4. HERO OVERLAY POSITIONING */
+.hero {
+    position: relative;
 }
 
-header nav a {
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--secondary-color);
     color: var(--nav-link-color);
+    padding: 10px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: var(--accent1-color);
+    color: var(--nav-link-color);
+    padding: 15px;
+}
+
+/* 5. ARTICLE IMAGE FLOAT */
+.hero article img {
+    float: right;
+    width: 100px;
+    border: 2px solid var(--accent2-color);
+    margin-left: 10px;
+}
+
+/* 6. NAV AND SOCIAL MEDIA LINKS */
+header nav {
+    background-color: var(--nav-background-color);
+    padding: 10px;
+}
+
+header nav a, .socialmedia a {
+    color: var(--nav-link-color);
+    padding: 10px;
+    text-decoration: none;
 }
 
 header nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+}
+
+.socialmedia {
+    float: right;
 }
