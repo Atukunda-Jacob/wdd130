@@ -1,6 +1,11 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@700&display=swap');
+/* 1. UNIVERSAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* 2. CSS VARIABLES IN :ROOT */
 :root {
     --primary-color: #055a9c;
     --secondary-color: #f4a261;
@@ -14,95 +19,26 @@
     --nav-hover-background-color: #264653;
 }
 
+/* 3. USE THE VARIABLES */
 body {
     font-family: var(--paragraph-font);
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
+    color: var(--primary-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-header {
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    align-items: center;
-    background-color: var(--primary-color);
-    padding: 10px;
+header nav {
+    background-color: var(--nav-background-color);
 }
 
-header img {
-    width: 100px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-}
-
-nav a {
+header nav a {
     color: var(--nav-link-color);
-    text-decoration: none;
-    padding: 10px;
-    font-weight: bold;
 }
 
-nav a:hover {
+header nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
-}
-
-.hero {
-    position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    text-align: center;
-    color: white;
-    background-color: rgba(5, 90, 156, 0.8);
-    padding: 10px;
-}
-
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 10px;
-}
-
-.hero article img {
-    float: right;
-    width: 125px;
-    margin-left: 10px;
-}
-
-section {
-    margin: 20px 0;
-}
-
-section img {
-    width: 30%;
-    margin: 5px;
-}
-
-footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
 }
