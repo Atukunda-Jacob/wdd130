@@ -1,22 +1,24 @@
-/* UNIVERSAL SELECTOR RESET - REQUIRED BY AUDIT */
-* {
+/* 1. UNIVERSAL SELECTOR RESET - REQUIRED BY AUDIT */
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* 2. CSS VARIABLES - ALL 6 MUST BE USED */
 :root {
     --primary-color: #0a9396;
     --secondary-color: #005f73;
     --accent1-color: #ee9b00;
     --accent2-color: #94d2bd;
-    --heading-font: 'Merriweather', serif;
-    --paragraph-font: 'Roboto', sans-serif;
+    --heading-font: 'Georgia', serif;
+    --paragraph-font: 'Arial', sans-serif;
 }
 
 body {
     font-family: var(--paragraph-font);
-    background-color: var(--accent2-color); /* USING ALL 4 COLOR VARIABLES */
+    background-color: var(--accent2-color); /* USING accent2-color */
+    color: #333;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -27,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--secondary-color);
 }
 
-/* HEADER - USES CSS GRID */
+/* 3. HEADER - CSS GRID REQUIRED */
 header {
     display: grid;
     grid-template-columns: 120px 1fr;
@@ -41,7 +43,7 @@ header img {
     height: auto;
 }
 
-/* NAV - USES CSS FLEX */
+/* 4. NAV - CSS FLEX REQUIRED */
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -61,7 +63,7 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* HERO SECTION */
+/* 5. HERO SECTION */
 .hero {
     position: relative;
     margin-top: 20px;
@@ -79,9 +81,8 @@ nav a:hover {
     width: 100%;
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 15px;
-    margin: 0;
 }
 
 .hero article {
@@ -89,7 +90,7 @@ nav a:hover {
     bottom: 30px;
     left: 30px;
     right: 30px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.85);
     padding: 15px;
     color: #000;
     border-radius: 5px;
@@ -99,34 +100,35 @@ nav a:hover {
     float: right;
     width: 125px;
     margin-left: 15px;
-    border: 1px solid var(--secondary-color);
+    border: 2px solid var(--secondary-color);
 }
 
-/* HISTORY SECTION */
+/* 6. HISTORY SECTION */
 .history {
     padding: 40px 20px;
     text-align: center;
     background-color: white;
+    margin-top: 20px;
 }
 
-/* ADVENTURE SECTION */
+/* 7. ADVENTURE SECTION */
 .adventure {
     padding: 40px 20px;
     text-align: center;
     background-color: white;
+    margin-top: 20px;
 }
 
 .adventure-gallery {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .adventure-gallery figure {
     flex: 1 1 18%;
     text-align: center;
-    margin: 0;
 }
 
 .adventure-gallery img {
@@ -141,7 +143,7 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
-/* FOOTER - WITH SOCIAL ICONS */
+/* 8. FOOTER */
 footer {
     display: flex;
     justify-content: space-between;
@@ -153,8 +155,8 @@ footer {
 }
 
 footer p {
-    margin: 0;
     color: white;
+    margin: 0;
 }
 
 .socialmedia {
@@ -162,7 +164,7 @@ footer p {
 }
 
 .socialmedia a {
-    text-decoration: none;
+    text-decoration: none; /* REQUIRED BY AUDIT */
 }
 
 .socialmedia img {
