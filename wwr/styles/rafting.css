@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Merriweather&display=swap');
+/* UNIVERSAL SELECTOR RESET - REQUIRED BY AUDIT */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 :root {
     --primary-color: #0a9396;
@@ -9,16 +14,12 @@
     --paragraph-font: 'Roboto', sans-serif;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 body {
     font-family: var(--paragraph-font);
+    background-color: var(--accent2-color); /* USING ALL 4 COLOR VARIABLES */
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,7 +34,6 @@ header {
     align-items: center;
     background-color: var(--primary-color);
     padding: 10px 20px;
-    margin-top: 20px;
 }
 
 header img {
@@ -106,20 +106,14 @@ nav a:hover {
 .history {
     padding: 40px 20px;
     text-align: center;
-}
-
-.history h2 {
-    margin-bottom: 20px;
+    background-color: white;
 }
 
 /* ADVENTURE SECTION */
 .adventure {
     padding: 40px 20px;
     text-align: center;
-}
-
-.adventure h2 {
-    margin-bottom: 20px;
+    background-color: white;
 }
 
 .adventure-gallery {
