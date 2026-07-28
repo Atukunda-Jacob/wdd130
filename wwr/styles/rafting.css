@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap');
-
 :root {
     --primary-color: #055a8c;
     --secondary-color: #f4f1de;
     --accent1-color: #e07a5f;
     --accent2-color: #81b29a;
 
-    --heading-font: 'Montserrat', sans-serif;
-    --paragraph-font: 'Roboto', sans-serif;
+    --heading-font: Arial, Helvetica, sans-serif;
+    --paragraph-font: Arial, Helvetica, sans-serif;
 
     --nav-background-color: var(--primary-color);
     --nav-link-color: white;
@@ -32,7 +30,13 @@ header {
     background-color: var(--primary-color);
     padding: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 80px;
+    height: auto;
 }
 
 nav {
@@ -80,6 +84,10 @@ h1 {
 
 .address p {
     margin: 0.5rem 0;
+}
+
+iframe {
+    border: 0;
 }
 
 /* Employee Section */
@@ -189,8 +197,11 @@ footer {
     margin-top: 2rem;
 }
 
-footer .sociallinks a {
-    color: white;
-    text-decoration: none;
+footer .socialmedia a {
     margin-left: 1rem;
+}
+
+footer .socialmedia img {
+    width: 30px;
+    height: 30px;
 }
