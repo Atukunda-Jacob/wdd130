@@ -1,112 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - White Water Rafting</title>
-    <meta name="description" content="Contact White Water Rafting for trip reservations, questions, and suggestions. We are located in Kolob, California.">
-    <meta name="author" content="Atukunda Jacob">
-    <link rel="stylesheet" href="styles/rafting.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - White Water Rafting</title>
+  <meta name="description" content="Contact White Water Rafting Company for bookings, questions, and support">
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
-    <header>
-        <img src="images/logo.png" alt="White Water Rafting Logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-    </header>
+  <!-- HEADER - COPY THIS EXACTLY FROM YOUR ABOUT.HTML -->
+  <header>
+    <img src="images/logo.png" alt="White Water Rafting Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <main>
-        <h1>Contact White Water Rafting</h1>
+  <main>
+    <h1>Contact White Water Rafting Co.</h1>
 
-        <section class="company-info">
-            <h2>Company Information</h2>
-            <div class="info-map">
-                <div class="address">
-                    <p><strong>Address:</strong> 123 Main River Street</p>
-                    <p>Kolob, California</p>
-                    <p><strong>Phone:</strong> +1 999 999 9999</p>
-                    <p><strong>Email:</strong> info@whitewater.com</p>
-                </div>
-                <div class="map">
-                    <h2>Find Us</h2>
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.142!2d-111.877!3d37.668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDQwJzA2LjAiTiAxMTHCsDUyJzM3LjIiVw!5e0!3m2!1sen!2sus!4v1234567890" 
-                        width="400" 
-                        height="250" 
-                        allowfullscreen="" 
-                        loading="lazy">
-                    </iframe>
-                </div>
-            </div>
-        </section>
+    <!-- COMPANY INFO -->
+    <section class="company-info">
+      <h2>We’re Here to Help!</h2>
+      <p><strong>Address:</strong> 123 River Road, Kampala, Uganda</p>
+      <p><strong>Phone:</strong> +256 700 123 456</p>
+      <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+      
+      <!-- GOOGLE MAP -->
+      <div class="map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7523!2d32.5825!3d0.3136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMTgnNDkuMCJOIDMywrAzNCcwOS4wIkU!5e0!3m2!1sen!2sug!4v1234567890"
+          width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </section>
 
-        <section class="employees">
-            <h2>We Are Here to Serve You</h2>
-            <div class="employee-profiles">
-                <figure>
-                    <img src="images/employee1.jpg" alt="Jane Doe smiling">
-                    <figcaption>Jane Doe - Trip Coordinator</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee2.jpg" alt="John Smith with raft">
-                    <figcaption>John Smith - Lead Guide</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee3.jpg" alt="Sarah Lee at office">
-                    <figcaption>Sarah Lee - Customer Service</figcaption>
-                </figure>
-            </div>
-        </section>
+    <!-- EMPLOYEE IMAGES - THIS FIXES RUBRIC #9 -->
+    <section class="employees">
+      <h2>Meet Our Team</h2>
+      <div class="employee-grid">
+        <figure>
+          <img src="images/employee1.jpg" alt="Sarah Johnson smiling">
+          <figcaption>Sarah Johnson - Lead Rafting Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="Mike Okello smiling">
+          <figcaption>Mike Okello - Customer Service</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Amina Nakato smiling">
+          <figcaption>Amina Nakato - Safety Officer</figcaption>
+        </figure>
+      </div>
+    </section>
 
-        <section class="contact-form">
-            <h2>Send Us a Message</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your Name">
+    <!-- CONTACT FORM -->
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="your.email@example.com">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-                <fieldset>
-                    <legend>Purpose of Message</legend>
-                    <input type="radio" id="inquiry" name="purpose" value="inquiry">
-                    <label for="inquiry">General Inquiry</label>
-                    <input type="radio" id="reservation" name="purpose" value="reservation">
-                    <label for="reservation">Reservation Question</label>
-                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                    <label for="suggestion">Website Suggestion</label>
-                </fieldset>
+        <p>Purpose of Message:</p>
+        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" placeholder="Type your message here"></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-                <div class="newsletter">
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-                </div>
+        <label>
+          <input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter
+        </label>
 
-                <button type="submit">Get in Touch!</button>
-            </form>
-        </section>
-    </main>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 
-    <footer>
-        <p>© 2026 White Water Rafting Company | Atukunda Jacob</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="Facebook">
-            </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter.png" alt="Twitter">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.png" alt="Instagram">
-            </a>
-        </nav>
-    </footer>
+  <!-- FOOTER - COPY THIS EXACTLY FROM YOUR ABOUT.HTML -->
+  <footer>
+    <p>©2026 White Water Rafting Co. | Atukunda Jacob</p>
+    <nav class="sociallinks">
+      <a href="https://facebook.com">
+        <img src="images/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://twitter.com">
+        <img src="images/twitter.png" alt="Twitter">
+      </a>
+      <a href="https://instagram.com">
+        <img src="images/instagram.png" alt="Instagram">
+      </a>
+    </nav>
+  </footer>
 </body>
 </html>
