@@ -3,100 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - White Water Rafting</title>
-  <meta name="description" content="Contact White Water Rafting Company for bookings, questions, and support">
-  <link rel="stylesheet" href="styles/rafting.css">
+  <title>White Water Rafting | Contact Us</title>
+  <meta name="description" content="Contact White Water Rafting to book your next adventure. Find our location, phone number, and contact form.">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <!-- HEADER - COPY THIS EXACTLY FROM YOUR ABOUT.HTML -->
+  <!-- COMMON HEADER -->
   <header>
     <img src="images/logo.png" alt="White Water Rafting Logo">
     <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
       <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html">Contact Us</a>
     </nav>
   </header>
 
   <main>
-    <h1>Contact White Water Rafting Co.</h1>
+    <h1>Contact Us</h1>
+    <p>Have questions? We'd love to hear from you.</p>
 
-    <!-- COMPANY INFO -->
-    <section class="company-info">
-      <h2>We’re Here to Help!</h2>
-      <p><strong>Address:</strong> 123 River Road, Kampala, Uganda</p>
-      <p><strong>Phone:</strong> +256 700 123 456</p>
-      <p><strong>Email:</strong> info@whitewaterrafting.com</p>
-      
-      <!-- GOOGLE MAP -->
-      <div class="map">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7523!2d32.5825!3d0.3136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMTgnNDkuMCJOIDMywrAzNCcwOS4wIkU!5e0!3m2!1sen!2sug!4v1234567890"
-          width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-      </div>
-    </section>
+    <div class="contact-grid">
+      <section>
+        <h2>Send Us a Message</h2>
+        <form>
+          <label for="fullname">Name:</label>
+          <input type="text" id="fullname" name="fullname" required>
 
-    <!-- EMPLOYEE IMAGES - THIS FIXES RUBRIC #9 -->
-    <section class="employees">
-      <h2>Meet Our Team</h2>
-      <div class="employee-grid">
-        <figure>
-          <img src="images/employee1.jpg" alt="Sarah Johnson smiling">
-          <figcaption>Sarah Johnson - Lead Rafting Guide</figcaption>
-        </figure>
-        <figure>
-          <img src="images/employee2.jpg" alt="Mike Okello smiling">
-          <figcaption>Mike Okello - Customer Service</figcaption>
-        </figure>
-        <figure>
-          <img src="images/employee3.jpg" alt="Amina Nakato smiling">
-          <figcaption>Amina Nakato - Safety Officer</figcaption>
-        </figure>
-      </div>
-    </section>
+          <label for="useremail">Email:</label>
+          <input type="email" id="useremail" name="useremail" required>
 
-    <!-- CONTACT FORM -->
-    <section class="contact-form">
-      <h2>Send Us a Message</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
 
-        <p>Purpose of Message:</p>
-        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <label>
-          <input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter
-        </label>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
+      <section>
+        <h2>Visit Us</h2>
+        <p>123 River Road, Rapids City, RC 12345</p>
+        <p>Phone: 555-123-RAFT</p>
+        <p>Email: info@wwrafting.com</p>
+        <img src="images/map.jpg" alt="Map location" class="map">
+      </section>
+    </div>
   </main>
 
-  <!-- FOOTER - COPY THIS EXACTLY FROM YOUR ABOUT.HTML -->
+  <!-- COMMON FOOTER -->
   <footer>
-    <p>©2026 White Water Rafting Co. | Atukunda Jacob</p>
+    <p>&copy; 2025 White Water Rafting | Jacob Atukunda</p>
     <nav class="sociallinks">
-      <a href="https://facebook.com">
-        <img src="images/facebook.png" alt="Facebook">
-      </a>
-      <a href="https://twitter.com">
-        <img src="images/twitter.png" alt="Twitter">
-      </a>
-      <a href="https://instagram.com">
-        <img src="images/instagram.png" alt="Instagram">
-      </a>
+      <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+      <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
     </nav>
   </footer>
 </body>
