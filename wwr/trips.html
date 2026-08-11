@@ -1,48 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>White Water Rafting | Trips</title>
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>White Water Rafting | Trips</title>
+  <meta name="description" content="Explore our exciting white water rafting trips. From beginner runs to advanced rapids, find the perfect adventure for you.">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <img src="images/logo.png" alt="White Water Rafting Logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-    </header>
+  <!-- COMMON HEADER -->
+  <header>
+    <img src="images/logo.png" alt="White Water Rafting Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
 
-    <main>
-        <h1>Our Amazing Rafting Trips</h1>
-        
-        <section>
-            <img src="images/trip1.jpg" alt="Beginner Trip">
-            <h2>Beginner River Trip</h2>
-            <p>Perfect for families and first-timers. Calm waters, beautiful scenery. 
-            Duration: 3 hours | Price: $50</p>
-        </section>
+  <main>
+    <h1>Our Rafting Trips</h1>
+    <p>Choose the adventure that's right for you. All trips include professional guides and safety equipment.</p>
 
-        <section>
-            <img src="images/trip2.jpg" alt="Intermediate Trip">
-            <h2>Intermediate Rapids</h2>
-            <p>Get your adrenaline pumping! Class III rapids and big fun.
-            Duration: 5 hours | Price: $85</p>
-        </section>
+    <!-- 2 COLUMN TRIPS GRID -->
+    <div class="trips-grid">
+      <section class="trip-card">
+        <img src="images/trip1.jpg" alt="Beginner River Run">
+        <h2>Beginner River Run</h2>
+        <p>Perfect for families and first-timers. Gentle rapids with beautiful scenery. Our guides will teach you everything you need to know.</p>
+        <ul>
+          <li><strong>Duration:</strong> 2 Hours</li>
+          <li><strong>Difficulty:</strong> Easy</li>
+          <li><strong>Age:</strong> 8+</li>
+        </ul>
+      </section>
 
-        <section>
-            <img src="images/trip3.jpg" alt="Expert Trip">
-            <h2>Expert Extreme Trip</h2>
-            <p>For thrill seekers only! Class IV-V rapids. Full day adventure.
-            Duration: 8 hours | Price: $120</p>
-        </section>
-    </main>
+      <section class="trip-card">
+        <img src="images/trip2.jpg" alt="Intermediate Adventure">
+        <h2>Intermediate Adventure</h2>
+        <p>More excitement! Tackle class II-III rapids with some splashes and thrills. Great for those with some experience.</p>
+        <ul>
+          <li><strong>Duration:</strong> Half Day</li>
+          <li><strong>Difficulty:</strong> Moderate</li>
+          <li><strong>Age:</strong> 12+</li>
+        </ul>
+      </section>
 
-    <footer>
-        <p>&copy; 2026 White Water Rafting | Atukunda Jacob</p>
-    </footer>
+      <section class="trip-card">
+        <img src="images/trip3.jpg" alt="Advanced Rapids">
+        <h2>Advanced Rapids</h2>
+        <p>For the adrenaline junkies! Conquer class IV rapids with our expert guides. This is the ultimate rafting challenge.</p>
+        <ul>
+          <li><strong>Duration:</strong> Full Day</li>
+          <li><strong>Difficulty:</strong> Hard</li>
+          <li><strong>Age:</strong> 16+</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- TRIPS TABLE -->
+    <section class="trips-table">
+      <h2>Trip Summary</h2>
+      <table>
+        <caption>Compare Our Trips</caption>
+        <thead>
+          <tr>
+            <th>Trip Name</th>
+            <th>Duration</th>
+            <th>Difficulty</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Beginner River Run</td>
+            <td>2 Hours</td>
+            <td>Easy</td>
+            <td>$45</td>
+          </tr>
+          <tr>
+            <td>Intermediate Adventure</td>
+            <td>Half Day</td>
+            <td>Moderate</td>
+            <td>$85</td>
+          </tr>
+          <tr>
+            <td>Advanced Rapids</td>
+            <td>Full Day</td>
+            <td>Hard</td>
+            <td>$120</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta">
+      <h2>Ready to Book Your Adventure?</h2>
+      <p>Spaces fill up fast! Contact us today to reserve your spot.</p>
+      <a href="contact.html" class="book-now">Book Now</a>
+    </section>
+
+  </main>
+
+  <!-- COMMON FOOTER -->
+  <footer>
+    <p>&copy; 2025 White Water Rafting | Jacob Atukunda</p>
+    <nav class="sociallinks">
+      <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+      <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+    </nav>
+  </footer>
 </body>
 </html>
